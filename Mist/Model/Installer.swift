@@ -779,7 +779,7 @@ struct Installer: Decodable, Hashable, Identifiable {
     }
 
     var bigSurOrNewer: Bool {
-        version.range(of: "^1[1-9]\\.", options: .regularExpression) != nil
+        version.range(of: "^1[1-9]|^2[6-9]\\.", options: .regularExpression) != nil
     }
 
     var beta: Bool {
